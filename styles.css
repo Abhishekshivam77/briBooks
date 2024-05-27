@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f9fc;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.inputs {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #103359;
+}
+
+.book-page {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(226, 199, 199);
+    position: relative;
+    width: 45%;
+}
+
+#cover-preview, #back-cover-preview {
+    height: 300px;
+}
+
+#pages-preview .book-page {
+    height: auto;
+    color: #333;
+    background-color: rgba(236, 217, 217, 0.8);
+    width: 45%;
+    margin: 10px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.cover h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cover h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.btn-container {
+    text-align: center;
+}
+
+
+.save-btn {
+    background-color: #12a90a; 
+}
+
+
+.download-btn {
+    background-color: #0c5cb2; 
+}
+
+
+.save-btn, .download-btn {
+    margin: 10px;
+}

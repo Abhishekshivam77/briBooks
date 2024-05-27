@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BriBooks - Create Your Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Create Your Book</h1>
+        
+        <div id="cover-section" class="section">
+            <h2>Cover Page</h2>
+            <div class="flex-container">
+                <div class="inputs">
+                    <label>Cover Image: <input type="file" id="cover-image-upload" accept="image/*"></label>
+                    <input type="text" id="cover-book-title" placeholder="Book Title">
+                    <input type="text" id="cover-author-name" placeholder="Author Name">
+                </div>
+                <div id="cover-preview" class="book-page cover">
+                    <h2 id="cover-book-title-preview"></h2>
+                    <h3 id="cover-author-name-preview"></h3>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pages-section" class="section">
+            <h2>Page Content</h2>
+            <div class="flex-container">
+                <div class="inputs">
+                    <label>Background Image: <input type="file" id="page-image-upload" accept="image/*"></label>
+                    <input type="text" id="page-title" placeholder="Page Title">
+                    <textarea id="page-content" placeholder="Page Content"></textarea>
+                    <button class="btn" onclick="addPage()">Add Page</button>
+                </div>
+                <div id="pages-preview" class="flex-container"></div>
+            </div>
+        </div>
+        
+        <div id="back-cover-section" class="section">
+            <h2>Back Cover Page</h2>
+            <div class="flex-container">
+                <div class="inputs">
+                    <label>Back Cover Image: <input type="file" id="back-cover-image-upload" accept="image/*"></label>
+                    <input type="text" id="back-cover-heading" placeholder="Heading">
+                    <textarea id="back-cover-details" placeholder="Author Details and Printing Office Address"></textarea>
+                </div>
+                <div id="back-cover-preview" class="book-page cover">
+                    <h2 id="back-cover-heading-preview"></h2>
+                    <p id="back-cover-details-preview"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="download-section" class="section">
+            <h2>Download & Save</h2>
+            <button class="btn" onclick="generatePDF()">Generate PDF</button>
+            <button class="btn" onclick="saveProgress()">Save Progress</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.3.1/dist/jspdf.umd.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="uploadImage.js"></script>
+</body>
+</html>
